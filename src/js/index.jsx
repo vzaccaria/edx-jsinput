@@ -48,7 +48,4 @@ window.getGrade = () => {
     return appState.success
 }
 
-console.log("OK!!")
-
-//render(<Sidebar />, document.getElementById('sidebar'))
-//render(<Routes />, document.getElementById('content'))
+render(<div>Ciao </div>, document.getElementById('content'))
