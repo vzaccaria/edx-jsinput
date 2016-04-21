@@ -1,4 +1,4 @@
-all: dev-static
+all: production-build 
 
 start-server:
 	./node_modules/.bin/webpack-dev-server --progress --colors --watch-poll 1000 --watch-aggregate-timeout 300

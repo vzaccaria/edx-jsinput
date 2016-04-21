@@ -4,6 +4,10 @@ import _ from 'lodash'
 
 // Main ideas taken from: http://jmfurlott.com/tutorial-setting-up-a-single-page-react-web-app-with-react-router-and-webpack/
 
+let appState = {
+    text: 'xyz',
+    success: true
+};
 
 // Import styles
 //require("style!../css/fonts.css");
@@ -19,7 +23,7 @@ initial or last saved state. The name of the getState() function must be the
 value of the get_statefn attribute of the jsinput element for the problem. */
 
 window.getState = () => {
-    return {};
+    return appState;
 }
 
 /* Your application must contain a setState() function. The setState() function
@@ -29,7 +33,7 @@ or she left it. The name of the setState() function must be the value of the
 set_statefn attribute of the jsinput element for the problem. */
 
 window.setState = (s) => {
-    return;
+    appState = s;
 }
 
 /* Your application must contain a getGrade() function. The getGrade() function
@@ -41,8 +45,10 @@ must be the value of the gradefn attribute of the jsinput element for the
 problem. */
 
 window.getGrade = () => {
-    return "ah?"
+    return appState.success
 }
+
+console.log("OK!!")
 
 //render(<Sidebar />, document.getElementById('sidebar'))
 //render(<Routes />, document.getElementById('content'))

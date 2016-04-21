@@ -37,8 +37,7 @@ function getLoaders() {
 var htmlPlugin = new HtmlWebpackPlugin({
     title: "Vittorio Zaccaria - Home page",
     filename: "index.html",
-    template: __dirname + "/src/html/index.html",
-    favicon: __dirname + "/src/sketch/favicon.png"
+    template: __dirname + "/src/html/index.html"
 });
 
 
